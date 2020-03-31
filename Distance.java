@@ -1,5 +1,4 @@
-// This class represents linear distance
-public class Distance 
+public class Distance
 {
   int feet;
   int yards;
@@ -40,7 +39,7 @@ public class Distance
   
   public String toString()
   {
-    return "" + feet + " feet, " + yards + " yards, and " + miles 
-      + " miles";
+    return "" + feet + " feet, " + yards + " yards, and " + miles + " 
+miles";
   }
 }

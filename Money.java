@@ -1,4 +1,6 @@
-public class Money 
+package money;
+import java.io.*;
+public class Money implements Serializable
 {
   private long dollars;
   private long cents;
@@ -34,13 +36,16 @@ public class Money
     return "$" + dollars + '.' + cents;
   } 
 
-  public Money  add(Money  value)
-  // Returns sum of object plus value.
-  {
-    Money  result = new Money();
-    result.cents = cents + value.cents;
-    result.dollars = dollars + value.dollars;
-    return result;
+ public Money  add(Money  value)
+// Returns sum of object plus value.
+{
+  Money  result = new Money();
+  result.cents = cents + value.cents;
+  result.dollars = dollars + value.dollars 
+    + result.cents / 100;
+  result.cents =  result.cents MOD 100;
+  return result;
   }
 }
+
 
