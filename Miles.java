@@ -1,8 +1,8 @@
 // Application Miles prints miles in kilometers
 public class Miles
 {
-  // Value-returning method
   public static double kilometers(int miles)
+// Value-returning method
   {
     final double KILOMETERS_PER_MILE = 1.609;
     return KILOMETERS_PER_MILE * (double)miles;
@@ -10,7 +10,7 @@ public class Miles
 
   public static void main(String[] args)
   {   
-    System.out.println("One mile is " + kilometers(1)  
+    System.out.println("One mile is " + kilometers(1)  //kilometers method is executed with argumens passed
       + " kilometers.");
     System.out.println("Ten miles is " + kilometers(10)
       + " kilometers.");
