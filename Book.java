@@ -1,35 +1,39 @@
-public class Book //class name is Book
+public class Book
 {
-String title; //3 member variables
-String author;
-String isbnNum;
-public Book(String newTitle, String newAuthor, String newISBN) //parameterized constructor setting fields to the values passed in the parenthesis
-{
-title=newTitle;
-author=newAuthor;
-isbnNum=newISBN;
+  String title;
+  String author;
+  String isbnNumber;
+  public Book(String newTitle, String newAuthor,
+              String newISBN)
+  {
+    title = newTitle;
+    author = newAuthor;
+    isbnNumber = newISBN;
+  }
+  public Book()
+  {
+    title = "";
+    author = "";
+    isbnNumber = "";
+  }
+  public String getTitle()
+  {
+    return title;
+  }
+  public String getAuthor()
+  {
+    return author;
+  }
+  public String getISBN()
+  {
+    return isbnNumber;
+  }
+  public String toString()
+  {
+  	return 
+  	    "Title:       " + title + "\n" 
+  	  + "Author:      " + author + "\n" 
+  	  + "isbn number: " + isbnNumber + "\n"; 
+  }
 }
-public Book() //default constructor setting fields to empty string.
-{
-title="";
-author="";
-isbnNum="";
-}
-public String getTitle() //3 value returning methods
-{
-return title;	
-}
-public String getAuthor()
-{
-return author;	
-}
-public String getISBN()
-{
-return isbnNum;	
-}
-}
-//PARAMETERS and ARGUMENTS: Parameters are the names of the variables in the heading of a method;
-//Arguments are the variables in method call.
-//The variables or expressions in method call are substituted for the parameters within the method body in execution.
-//Immutable Class is a class in which there is no method defined that changes the values of field.
 
