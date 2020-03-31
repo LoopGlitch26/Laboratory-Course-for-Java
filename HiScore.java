@@ -5,9 +5,16 @@
 import java.util.Scanner;
 public class HiScore
 {
-	static int largest(int one, int two, int three)
+  static int largest(int one, int two, int three)
   {
-    // Fill in the rest of the method
+    int highest = 0;
+    if (one > two)
+	  highest = one;
+	else
+	  highest = two;
+    if (three > highest)
+	  highest = three;
+	return highest;
   } 
   public static void main(String[] args)
   {
@@ -22,7 +29,10 @@ public class HiScore
     score2 = inData.nextInt();
     score3 = inData.nextInt();
     
-    // TO BE FILLED IN
+    System.out.println("The test scores are " + score1 + ", " +
+	                    score2 + ", " + score3);
+	System.out.println("The highest is " + largest(score1, score2,
+												   score3));
 
   }
 }
