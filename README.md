@@ -6,3 +6,5 @@ Second Edition
 Author: Nelle Dale
 
 This repo consists of the prelab and postlab activities.
+
+Copyright © by Jones and Bartlett Publishers
