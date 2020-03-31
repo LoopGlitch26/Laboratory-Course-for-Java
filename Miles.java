@@ -10,7 +10,7 @@ public class Miles
 
   public static void main(String[] args)
   {   
-    System.out.println("One mile is " + kilometers(1)  //kilometers method is executed with argumens passed
+    System.out.println("One mile is " + kilometers(1)  //kilometers method is executed with arguments passed
       + " kilometers.");
     System.out.println("Ten miles is " + kilometers(10)
       + " kilometers.");
