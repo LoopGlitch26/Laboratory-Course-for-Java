@@ -5,39 +5,34 @@ public class Money implements Serializable
   private long dollars;
   private long cents;
   
-  Money()
+  Money()   // Default Constructor
   {
     dollars = 0;
     cents = 0;
   }
 
-  public Money(long newDollars, long newCents)
-  // Constructor: Initializes dollars and cents
+  public Money(long newDollars, long newCents)  // Constructor: Initializes dollars and cents
   { 
     dollars = newDollars;
     cents = newCents;
   }
 
-  public long  getDollars()		
-  // Returns dollars
+  public long  getDollars()		 // Returns dollars
   {
     return dollars;
   }
 
-  public long getCents()		
-  // Returns cents
+  public long getCents()	  // Returns cents
   {
     return cents;
   }
  
-  public String toString()
-  // Returns a formatted string for printing
+  public String toString()   // Returns a formatted string for printing
   {
     return "$" + dollars + '.' + cents;
   } 
 
- public Money  add(Money  value)
-// Returns sum of object plus value.
+ public Money  add(Money  value)   // Returns a Money object that is the result of adding two Money objects
 {
   Money  result = new Money();
   result.cents = cents + value.cents;
