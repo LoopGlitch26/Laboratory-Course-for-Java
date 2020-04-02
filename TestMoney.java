@@ -4,7 +4,7 @@ public class TestMoney
   public static void main(String[] args)
   {
     Money myMoney = new Money();
-	  System.out.println(myMoney.getDollars() + " dollars " + mMoney.getCents() + " cents");
+	  System.out.println(myMoney.getDollars() + " dollars " + myMoney.getCents() + " cents");
     System.out.println(myMoney);
     Money yourMoney = new Money(33, 44);
 	  System.out.println(yourMoney.getDollars() + " dollars " + yourMoney.getCents() + " cents");
